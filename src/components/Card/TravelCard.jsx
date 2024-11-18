@@ -1,6 +1,12 @@
 import { MdTravelExplore } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 const TravelCard = ({ travel }) => {
-    const { title, image, ecoFriendlyFeatures } = travel
+    const { title, image, ecoFriendlyFeatures } = travel;
+    const navigate = useNavigate();
+
+    const handleExploreClick = () => {
+        navigate("/explore-now")
+    }
     return (
         <div className="card bg-base-100 w-96 shadow-xl shadow-green-700">
             <figure className="">
@@ -19,7 +25,9 @@ const TravelCard = ({ travel }) => {
 
                 <div className="  card-actions justify-end">
 
-                    <button className=" btn w-42 bg-gradient-to-r from-green-600 to-green-900 text-white font-semibold ">Explore Now <MdTravelExplore /></button>
+                    <button
+                        onClick={handleExploreClick}
+                        className=" btn w-42 bg-gradient-to-r from-green-600 to-green-900 text-white font-semibold ">Explore Now <MdTravelExplore /></button>
                 </div>
 
             </div>
