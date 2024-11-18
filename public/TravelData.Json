@@ -1,0 +1,254 @@
+[
+    {
+        "id": 1,
+        "title": "Rainforest Canopy Trek",
+        "image": "https://images.stockcake.com/public/7/1/c/71c477c3-66c6-4b6d-9e4e-907fff3e40a6_large/explorer-s-jungle-trek-stockcake.jpg",
+        "categoryName": "Hiking",
+        "shortDescription": "Explore the lush rainforests and trek through scenic canopy trails.",
+        "adventureCost": "$150",
+        "bookingAvailability": true,
+        "location": "Costa Rica",
+        "duration": "8 hours",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Guide",
+            "Lunch",
+            "Safety Equipment"
+        ],
+        "ecoFriendlyFeatures": [
+            "Zero plastic policy",
+            "Locally sourced meals",
+            "Sustainable trails"
+        ],
+        "maxGroupSize": 12,
+        "specialInstructions": [
+            "Wear comfortable hiking shoes",
+            "Carry a reusable water bottle",
+            "Apply eco-friendly sunscreen"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Ocean Kayak Expedition",
+        "image": "https://www.seakayak.hr/images/tours/expeditions/northern-delights-six-islands-7-days/northern-delights-six-islands-7-days-1.jpeg",
+        "categoryName": "Water Sports",
+        "shortDescription": "Paddle along the pristine coast and discover marine wildlife.",
+        "adventureCost": "$100",
+        "bookingAvailability": true,
+        "location": "New Zealand",
+        "duration": "4 hours",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Kayak",
+            "Life Jacket",
+            "Snacks"
+        ],
+        "ecoFriendlyFeatures": [
+            "No single-use plastic",
+            "Guides trained in marine conservation",
+            "Solar-powered equipment"
+        ],
+        "maxGroupSize": 10,
+        "specialInstructions": [
+            "Bring a hat and sunglasses",
+            "Use reef-safe sunscreen",
+            "Carry your own reusable water bottle"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Desert Stargazing Safari",
+        "image": "https://img.freepik.com/premium-photo/nighttime-desert-safari-with-view-stars-moon-created-with-generative-ai_124507-178459.jpg",
+        "categoryName": "Camping",
+        "shortDescription": "Experience the magic of the desert night sky.",
+        "adventureCost": "$200",
+        "bookingAvailability": false,
+        "location": "Morocco",
+        "duration": "Overnight",
+        "adventureLevel": "Moderate",
+        "includedItems": [
+            "Tents",
+            "Dinner and breakfast",
+            "Star map"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar lighting",
+            "Reusable cutlery",
+            "Leave no trace policy"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Pack light clothing",
+            "Carry eco-friendly toiletries",
+            "Wear warm layers for the night"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Jungle Wildlife  Tour",
+        "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/b8/1b.jpg",
+        "categoryName": "Photography",
+        "shortDescription": "Capture stunning wildlife shots in their natural habitat.",
+        "adventureCost": "$250",
+        "bookingAvailability": true,
+        "location": "Amazon Rainforest",
+        "duration": "2 days",
+        "adventureLevel": "Challenging",
+        "includedItems": [
+            "Photography guide",
+            "Meals",
+            "Tent"
+        ],
+        "ecoFriendlyFeatures": [
+            "Sustainable accommodation",
+            "Biodegradable waste bags",
+            "Minimal-impact approach"
+        ],
+        "maxGroupSize": 5,
+        "specialInstructions": [
+            "Bring your own camera",
+            "Wear long-sleeved clothing",
+            "Insect repellent must be eco-friendly"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Mountain Biking Adventure",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/027/102/081/small/mountain-biker-in-sunset-symbolizing-triumph-overcoming-challenges-and-working-out-photo.jpg",
+        "categoryName": "Cycling",
+        "shortDescription": "Thrill-seekers can bike through rugged mountain paths.",
+        "adventureCost": "$180",
+        "bookingAvailability": true,
+        "location": "Swiss Alps",
+        "duration": "6 hours",
+        "adventureLevel": "Challenging",
+        "includedItems": [
+            "Mountain bike",
+            "Helmet",
+            "Snacks"
+        ],
+        "ecoFriendlyFeatures": [
+            "Reusable water containers",
+            "Eco-friendly trails",
+            "Non-toxic cleaning for bikes"
+        ],
+        "maxGroupSize": 6,
+        "specialInstructions": [
+            "Wear proper biking gear",
+            "Carry a light backpack",
+            "Stay hydrated"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Eco Yoga Retreat",
+        "image": "https://photos.tpn.to/kj/eo/mk/lg/653x490.jpg",
+        "categoryName": "Wellness",
+        "shortDescription": "Reconnect with nature through guided yoga sessions.",
+        "adventureCost": "$300",
+        "bookingAvailability": true,
+        "location": "Bali, Indonesia",
+        "duration": "3 days",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Yoga mat",
+            "Organic meals",
+            "Meditation guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "Solar-powered retreat",
+            "Recyclable materials",
+            "Organic and local food"
+        ],
+        "maxGroupSize": 15,
+        "specialInstructions": [
+            "Wear breathable clothing",
+            "Bring a journal",
+            "Use eco-friendly products"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Cave Exploration Journey",
+        "image": "https://png.pngtree.com/thumb_back/fh260/background/20240810/pngtree-three-kids-explore-limestone-stone-cave-at-mountain-image_16127291.jpg",
+        "categoryName": "Exploration",
+        "shortDescription": "Discover the mysteries hidden within ancient caves.",
+        "adventureCost": "$220",
+        "bookingAvailability": false,
+        "location": "Vietnam",
+        "duration": "5 hours",
+        "adventureLevel": "Difficult",
+        "includedItems": [
+            "Headlamp",
+            "Protective gear",
+            "Guide"
+        ],
+        "ecoFriendlyFeatures": [
+            "Environment-friendly lighting",
+            "Certified eco-tour guides",
+            "No-impact path policy"
+        ],
+        "maxGroupSize": 8,
+        "specialInstructions": [
+            "Wear sturdy boots",
+            "Carry gloves",
+            "Be mindful of cave formations"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Whale Watching Excursion",
+        "image": "https://viajesislandia.com/images/ballenas-Husavik/excursion-ballenas-husavik.jpg",
+        "categoryName": "Wildlife",
+        "shortDescription": "Observe majestic whales in their natural environment.",
+        "adventureCost": "$130",
+        "bookingAvailability": true,
+        "location": "Iceland",
+        "duration": "3 hours",
+        "adventureLevel": "Easy",
+        "includedItems": [
+            "Binoculars",
+            "Expert guide",
+            "Warm drinks"
+        ],
+        "ecoFriendlyFeatures": [
+            "Electric boats",
+            "Strict no-feed policy",
+            "Biodegradable waste handling"
+        ],
+        "maxGroupSize": 20,
+        "specialInstructions": [
+            "Wear a warm jacket",
+            "Bring a camera",
+            "Respect wildlife"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Forest Survival Course",
+        "image": "https://img.freepik.com/premium-photo/wilderness-survival-training-course-where-participants-learn-how-build-shelters-find-food-navigate-harsh-outdoor-conditions_1214173-54190.jpg",
+        "categoryName": "Survival Skills",
+        "shortDescription": "Learn essential skills for surviving in the wilderness.",
+        "adventureCost": "$280",
+        "bookingAvailability": true,
+        "location": "Canada",
+        "duration": "2 days",
+        "adventureLevel": "Advanced",
+        "includedItems": [
+            "Knife",
+            "Firestarter kit",
+            "Guidebook"
+        ],
+        "ecoFriendlyFeatures": [
+            "Minimal-impact camping",
+            "Use of natural resources responsibly",
+            "No waste policy"
+        ],
+        "maxGroupSize": 5,
+        "specialInstructions": [
+            "Bring sturdy boots",
+            "Pack light",
+            "Follow guide's instructions"
+        ]
+    }
+]

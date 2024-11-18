@@ -35,15 +35,15 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className=" text-2xl font-extrabold text-green-900"><i>ECO Tr@vel</i></a>
+                <a className=" text-4xl font-extrabold text-green-900"><i>ECO Tr@vel</i></a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-green-800 text-xs  font-bold">
+                <ul className="menu menu-horizontal px-1 text-green-800   font-bold">
                     {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <img className="w-[100px]" src={logoImg} alt="" />
+                <img className="w-[150px]" src={logoImg} alt="" />
             </div>
         </div>
     );

@@ -1,8 +1,10 @@
 
+import Hero from "../Hero";
+
 const Home = () => {
     return (
         <div>
-            i am home
+            <Hero></Hero>
         </div>
     );
 };
