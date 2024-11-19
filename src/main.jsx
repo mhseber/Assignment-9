@@ -10,6 +10,9 @@ import MainRouter from './Router/MainRouter.jsx';
 import Home from './components/Layout/Home.jsx';
 import UpdateProfile from './components/Layout/UpdateProfile.jsx';
 import UserProfile from './components/Layout/UserProfile.jsx';
+import AuthLayout from './components/Layout/AuthLayout.jsx';
+import Login from './components/Pages/Login.jsx';
+import Register from './components/Pages/Register.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,9 +30,31 @@ const router = createBrowserRouter([
       {
         path: "userProfile",
         element: <UserProfile></UserProfile>
-      }
-    ]
+      },
+
+    ],
+
   },
+  {
+    path: "auth",
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/auth/register",
+        element: <Register></Register>,
+      },
+      {
+        path: "*",
+        element: <h1>Error</h1>
+      },
+    ],
+  },
+
+
 ]);
 
 createRoot(document.getElementById('root')).render(

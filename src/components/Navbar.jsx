@@ -1,5 +1,5 @@
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoImg from "../assets/Logo.png"
 const Navbar = () => {
 
@@ -42,7 +42,8 @@ const Navbar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end gap-10">
+                <Link to="/auth/login" className="btn btn-outline btn-success font-semibold ">Login</Link>
                 <img className="w-[150px]" src={logoImg} alt="" />
             </div>
         </div>
