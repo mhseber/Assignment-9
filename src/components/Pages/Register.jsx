@@ -1,11 +1,36 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Register = () => {
+    const { createNewUser, setUser } = useContext(AuthContext);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // form data
+        const form = new FormData(e.target);
+        const name = form.get("name")
+        const email = form.get("email")
+        const photo = form.get("photo")
+        const password = form.get("password")
+        console.log({ name, email, photo, password });
+
+        createNewUser(email, password)
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+                console.log(user);
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage)
+            })
+    };
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
             <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
                 <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">User Register</h1>
-                <form>
+                <form onSubmit={handleSubmit}>
                     {/* name */}
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
@@ -22,13 +47,13 @@ const Register = () => {
                     </div>
                     {/* photo Url */}
                     <div className="mb-4">
-                        <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                        <label htmlFor="photo" className="block text-gray-700 font-medium mb-2">
                             URL
                         </label>
                         <input
                             type="text"
                             id="url"
-                            name="email"
+                            name="photo"
                             placeholder="photo url"
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
                             required

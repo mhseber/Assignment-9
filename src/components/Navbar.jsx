@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className="navbar-end gap-10">
                 <Link to="/auth/login" className="btn btn-outline btn-success font-semibold ">Login</Link>
                 <img className="w-[150px]" src={logoImg} alt="" />
-                <div className="">{user.name}</div>
+                <div className="">{user && user.name}</div>
             </div>
         </div>
     );
