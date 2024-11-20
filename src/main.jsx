@@ -8,12 +8,15 @@ import {
 } from "react-router-dom";
 import MainRouter from './Router/MainRouter.jsx';
 import Home from './components/Layout/Home.jsx';
-import UpdateProfile from './components/Layout/UpdateProfile.jsx';
-import UserProfile from './components/Layout/UserProfile.jsx';
+import UpdateProfile from './components/Layout/Details.jsx';
+import UserProfile from './components/Layout/Contact.jsx';
 import AuthLayout from './components/Layout/AuthLayout.jsx';
 import Login from './components/Pages/Login.jsx';
 import Register from './components/Pages/Register.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
+import Details from './components/Layout/Details.jsx';
+import Contact from './components/Layout/Contact.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -24,13 +27,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>
       },
+
       {
-        path: "updateProfile",
-        element: <UpdateProfile></UpdateProfile>
+        path: "details",
+        element: <Details></Details>
       },
       {
-        path: "userProfile",
-        element: <UserProfile></UserProfile>
+        path: "contact",
+        element: <Contact></Contact>
       },
 
     ],
@@ -52,6 +56,7 @@ const router = createBrowserRouter([
         path: "*",
         element: <h1>Error</h1>
       },
+
     ],
   },
 

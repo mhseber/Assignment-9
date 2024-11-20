@@ -1,29 +1,41 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
     const { userLogin, setUser } = useContext(AuthContext);
-    const handleSubmit = (e) => {
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log({ email, password });
-        userLogin(email, password)
-            .then(result => {
-                const user = result.user;
-                setUser(user);
-            })
-            .catch((error) => {
-                alert(error.code);
-            });
+        // console.log({ email, password });
+        try {
+            const result = await userLogin(email, password);
+            const user = result.user;
+            setUser(user);
 
-    }
+            toast.success("Login successful!", {
+                position: toast.position.top_center,
+            });
+            navigate("/home");
+        } catch (error) {
+            toast.error(`Login failed: ${error.code}`, {
+                position: toast.position.top_center,
+            });
+        };
+
+
+
+
+    };
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
-                <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">User Login</h1>
+            <div className="bg-white shadow-xl shadow-green-600 rounded-lg p-6 w-full max-w-md">
+                <h1 className="text-2xl font-bold text-center mb-6 text-green-800">User Login</h1>
                 <form onSubmit={handleSubmit}>
                     {/* Email Field */}
                     <div className="mb-4">
@@ -58,23 +70,24 @@ const Login = () => {
                     {/* Forget Password Link */}
                     <div className="mb-6 text-right">
                         <a
-                            href="/forget-password"
-                            className="text-sm text-blue-500 hover:underline"
+                            href="/auth/register"
+                            className="text-sm text-green-800 hover:underline"
                         >
-                            Forgot Password?
+                            Forgat Password?
                         </a>
                     </div>
 
                     {/* Login Button */}
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
+                        className="w-full bg-blue-500 text-white py-2 rounded-md bg-gradient-to-r from-green-600 to-green-900  font-semibold"
                     >
                         Login
                     </button>
                 </form>
-                <p className="text-center font-bold ">
-                    Dont't Have An Account ? <Link to="/auth/register">Register</Link>
+                <p className="text-center  font-bold pt-5  ">
+                    Dont't Have An Account ?
+                    <Link to="/auth/register"><span className="text-green-800 pl-5">Register</span></Link>
                 </p>
             </div>
         </div>

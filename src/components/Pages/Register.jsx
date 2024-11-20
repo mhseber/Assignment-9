@@ -28,8 +28,8 @@ const Register = () => {
     };
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
-            <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
-                <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">User Register</h1>
+            <div className="bg-white shadow-xl shadow-green-600 rounded-lg p-6 w-full max-w-md">
+                <h1 className="text-2xl font-bold text-center mb-6 text-green-800">User Register</h1>
                 <form onSubmit={handleSubmit}>
                     {/* name */}
                     <div className="mb-4">
@@ -92,23 +92,24 @@ const Register = () => {
                     {/* Forget Password Link */}
                     <div className="mb-6 text-right">
                         <a
-                            href="/forget-password"
-                            className="text-sm text-blue-500 hover:underline"
+                            href="/auth/register"
+                            className="text-sm text-green-800 hover:underline"
                         >
-                            Forgot Password?
+                            Forgat Password?
                         </a>
                     </div>
 
                     {/* Login Button */}
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors"
+                        className="w-full py-2 rounded-md bg-gradient-to-r from-green-600 to-green-900 text-white font-semibold"
                     >
                         Register
                     </button>
                 </form>
-                <p className="text-center font-bold ">
-                    All ready Have An Account ? <Link to="/auth/login">Login</Link>
+                <p className="text-center font-bold pt-5 ">
+                    All ready Have An Account ?
+                    <Link to="/auth/login"><span className="text-green-800 pl-5">Login</span></Link>
                 </p>
             </div>
         </div>

@@ -14,12 +14,12 @@ function App() {
 
     <Router>
       <Routes>
-        <Route path='/' element={<TravelCard></TravelCard>}></Route>
-        <Route path='/explore-now' element={<ExploreNow></ExploreNow>}></Route>
+
+
 
       </Routes>
     </Router>
   )
 }
 
-export default App
+export default App;
