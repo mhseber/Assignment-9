@@ -1,8 +1,11 @@
 import { MdTravelExplore } from "react-icons/md";
+import { Link, } from "react-router-dom";
 
 
 const TravelCard = ({ travel }) => {
     const { title, image, ecoFriendlyFeatures } = travel;
+
+
 
 
     return (
@@ -22,10 +25,8 @@ const TravelCard = ({ travel }) => {
                 </ul>
 
                 <div className="  card-actions justify-end">
-
-                    <button
-
-                        className=" btn w-42 bg-gradient-to-r from-green-600 to-green-900 text-white font-semibold ">Explore Now <MdTravelExplore /></button>
+                    <Link to="exploreNow"
+                        className=" btn w-42 bg-gradient-to-r from-green-600 to-green-900 text-white font-semibold ">Explore Now <MdTravelExplore /></Link>
                 </div>
 
             </div>

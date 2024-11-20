@@ -16,6 +16,7 @@ import Register from './components/Pages/Register.jsx';
 import AuthProvider from './Provider/AuthProvider.jsx';
 import Details from './components/Layout/Details.jsx';
 import Contact from './components/Layout/Contact.jsx';
+import ExploreNow from './components/Pages/ExploreNow.jsx';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "exploreNow",
+        element: <ExploreNow></ExploreNow>
       },
 
       {
