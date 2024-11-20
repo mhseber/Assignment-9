@@ -37,7 +37,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className=" text-4xl font-extrabold text-green-900"><i>ECO Tr@vel</i></a>
+                <a className=" lg:text-4xl text-2xl font-extrabold text-green-900"><i>ECO Tr@vel</i></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-green-800   font-bold">
@@ -51,7 +51,8 @@ const Navbar = () => {
                     <Link to="/auth/login" className="btn btn-outline btn-success font-semibold ">Login</Link>)
                 }
 
-                <img className="w-[150px]" src={logoImg} alt="" />
+                <img className=" hidden lg:block
+                 w-[150px]" src={logoImg} alt="" />
                 <div className="">{user && user.name}</div>
             </div>
         </div>

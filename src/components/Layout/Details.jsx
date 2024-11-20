@@ -10,7 +10,7 @@ const Details = () => {
                 <div>
                     <h1 className='text-center text-5xl font-extrabold text-green-900'>Why Choose Our Eco-Adventures?</h1>
                 </div>
-                <div className='grid grid-cols-3 mt-10'>
+                <div className='grid lg:grid-cols-3 grid-cols-1 mt-10 gap-3'>
 
                     <div className="card bg-base-100 w-96 shadow-xl ml-3 ">
                         <div className="card-body ">
@@ -41,7 +41,7 @@ const Details = () => {
                     <span className="text-5xl"><GoCodeReview /></span>
 
                 </div>
-                <div className='grid grid-cols-3 mt-10'>
+                <div className='grid lg:grid-cols-3 grid-cols-1 gap-3 mt-10'>
 
                     <div className="card bg-base-100 w-96 shadow-xl ml-3 ">
                         <div className="card-body ">
