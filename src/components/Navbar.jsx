@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import logoImg from "../assets/Logo.png"
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
+import { IoLogInOutline } from "react-icons/io5";
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const links = <>
@@ -46,9 +47,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-end gap-10">
                 {user && user?.email ? (
-                    <button onClick={logOut} className="btn btn-outline btn-success font-semibold ">Log-Out</button>
+                    <button onClick={logOut} className="btn btn-outline btn-success font-semibold "><span className="text-xl text-black"><IoLogInOutline /></span>Log-Out</button>
                 ) : (
-                    <Link to="/auth/login" className="btn btn-outline btn-success font-semibold ">Login</Link>)
+                    <Link to="/auth/login" className="btn btn-outline btn-success font-semibold "> <span className="text-xl text-black"><IoLogInOutline /></span>Login</Link>)
                 }
 
                 <img className=" hidden lg:block

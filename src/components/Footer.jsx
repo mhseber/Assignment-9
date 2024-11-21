@@ -26,16 +26,16 @@ const Footer = () => {
                         <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
                         <ul>
                             <li>
-                                <a href="/about" className="hover:underline">About Us</a>
+                                <a className="hover:underline">About Us</a>
                             </li>
                             <li>
-                                <a href="/services" className="hover:underline">Services</a>
+                                <a className="hover:underline">Services</a>
                             </li>
                             <li>
-                                <a href="/contact" className="hover:underline">Contact Us</a>
+                                <a className="hover:underline">Contact Us</a>
                             </li>
                             <li>
-                                <a href="/privacy-policy" className="hover:underline">Privacy Policy</a>
+                                <a className="hover:underline">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
